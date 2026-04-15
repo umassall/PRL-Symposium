@@ -41,6 +41,25 @@
       .text-small {
         font-size: 0.95rem;
       }
+      .schedule-table td,
+      .schedule-table th {
+        vertical-align: top;
+      }
+      .schedule-time {
+        white-space: nowrap;
+        font-weight: 600;
+        width: 12rem;
+      }
+      .schedule-note {
+        background: #f8f9fa;
+        border-left: 4px solid #6c757d;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+      .venue-badge {
+        display: inline-block;
+        margin-top: 0.35rem;
+      }
     </style>
   </head>
 
@@ -106,12 +125,15 @@
               <strong>Eleonore Neufeld</strong> (Department of Philosophy, HFA) and <strong>Philip Thomas</strong> (Manning College of Information and Computer Sciences, CICS).
             </p>
 
-            <!-- Optional: add a small “audience” note -->
             <hr>
-            <p class="mb-0 text-small text-secondary">
-              Note: The symposium will include talks by invited participants and structured discussion sessions. Additional details
-              about public access (if applicable) and logistics will be posted as the program is finalized.
-            </p>
+            <div class="schedule-note">
+              <p class="mb-2">
+                <strong>Registration is required.</strong> Participation is restricted to invited participants.
+              </p>
+              <p class="mb-0">
+                Invited participants should have received an email with a link to the registration form.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -121,13 +143,186 @@
         <div class="card shadow-sm">
           <div class="card-body">
             <h2 class="h3 section-title">Schedule</h2>
-            <p class="mb-2">
-              The detailed schedule is currently being finalized and will be posted here.
+            <p class="text-secondary mb-4">
+              The symposium will take place over two days at two campus locations.
             </p>
 
-            <div class="alert alert-secondary mb-0" role="alert">
-              <strong>Coming soon.</strong> Please check back for session times, talk titles, and room locations.
+            <div class="row g-4">
+              <div class="col-12 col-lg-6">
+                <div class="card h-100 border-0 bg-light">
+                  <div class="card-body">
+                    <h3 class="h4 mb-1">May 1</h3>
+                    
+                    <div class="table-responsive">
+                      <table class="table table-sm schedule-table mb-0">
+                        <tbody>
+                          <tr>
+                            <td class="schedule-time">9:00–9:30 a.m.</td>
+                            <td>Bagels and coffee (breakfast)</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">9:30–10:00 a.m.</td>
+                            <td>Opening Remarks</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">10:00–10:30 a.m.</td>
+                            <td><b>Talk: Paul De Font Reaulx</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">10:30–10:40 a.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">10:40–11:10 a.m.</td>
+                            <td><b>Talk: Philip Thomas</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">11:10–11:20 a.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">11:20–11:50 a.m.</td>
+                            <td><b>Talk: David Rattray</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">11:50 a.m.–12:00 p.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">12:00–2:00 p.m.</td>
+                            <td>Lunch at <a href="https://umassdining.com/locations-menus/campus-center/blue-wall" target="_blank" rel="noopener noreferrer">Blue Wall</a></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">2:00–2:30 p.m.</td>
+                            <td><b>Talk: David Abel</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">2:30–2:40 p.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">2:40–3:10 p.m.</td>
+                            <td><b>Talk: Patrick Butlin</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">3:10–3:20 p.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">3:20–4:00 p.m.</td>
+                            <td>Coffee break</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">4:00–5:00 p.m.</td>
+                            <td>Discussion</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">5:00–6:15 p.m.</td>
+                            <td>Break</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">6:15–6:30 p.m.</td>
+                            <td>Travel to Dinner</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">6:30 p.m.</td>
+                            <td>Dinner</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <div class="card h-100 border-0 bg-light">
+                  <div class="card-body">
+                    <h3 class="h4 mb-1">May 2</h3>
+
+                    <div class="table-responsive">
+                      <table class="table table-sm schedule-table mb-0">
+                        <tbody>
+                          <tr>
+                            <td class="schedule-time">9:30–10:00 a.m.</td>
+                            <td>Bagels and coffee</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">10:00–10:30 a.m.</td>
+                            <td><b>Talk: Chandra Sekhar Sripada</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">10:30–10:40 a.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">10:40–11:10 a.m.</td>
+                            <td><b>Talk: Anna Harutyunyan</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">11:10–11:20 a.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">11:20–11:50 a.m.</td>
+                            <td><b>Talk: Eleonore Neufeld</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">11:50 a.m.–12:00 p.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">12:00–2:00 p.m.</td>
+                            <td>Lunch at <a href="https://umassdining.com/locations-menus/campus-center/blue-wall" target="_blank" rel="noopener noreferrer">Blue Wall</a> or in Amherst</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">2:00–2:30 p.m.</td>
+                            <td><b>Talk: John Martin</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">2:30–2:40 p.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">2:40–3:10 p.m.</td>
+                            <td><b>Talk: Will Dabney</b></td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">3:10–3:20 p.m.</td>
+                            <td>Q&amp;A</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">3:20–4:00 p.m.</td>
+                            <td>Coffee break</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">4:00–5:00 p.m.</td>
+                            <td>Discussion</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">5:00–5:15 p.m.</td>
+                            <td>Closing remarks</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">5:15–6:00 p.m.</td>
+                            <td>Break</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">6:00–6:30 p.m.</td>
+                            <td>Travel to Dinner/Party</td>
+                          </tr>
+                          <tr>
+                            <td class="schedule-time">6:30–9:00 p.m.</td>
+                            <td>Catered Dinner/Party</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
