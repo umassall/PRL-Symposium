@@ -60,6 +60,24 @@
         display: inline-block;
         margin-top: 0.35rem;
       }
+      .talk-title {
+        margin-top: 0.2rem;
+        font-style: italic;
+      }
+      .abstract-toggle {
+        margin-top: 0.35rem;
+        padding: 0;
+        font-size: 0.95rem;
+        vertical-align: baseline;
+      }
+      .talk-abstract {
+        margin-top: 0.5rem;
+        padding: 0.75rem 0.9rem;
+        background: #ffffff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.4rem;
+        font-size: 0.95rem;
+      }
     </style>
   </head>
 
@@ -166,7 +184,17 @@
                           </tr>
                           <tr>
                             <td class="schedule-time">10:00–10:30</td>
-                            <td><b>Talk:</b> <a href="https://www.pauldfr.com/">Paul de Font-Reaulx</a></td>
+                            <td><b>Talk:</b> <a href="https://www.pauldfr.com/">Paul de Font-Reaulx</a>
+			      <div class="talk-title">Evidentialism about Reward</div>
+			        <button class="btn btn-link abstract-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-paul" aria-expanded="false" aria-controls="abstract-paul">
+			          Abstract
+			        </button>
+			      <div class="collapse" id="abstract-paul">
+			        <div class="talk-abstract">
+			          What does the reward function in reinforcement learning correspond to in natural agents, such as humans? I present and defend evidentialism about reward: the view that biological reward signals provide pre-reflective evidence about a functional quantity of basic value that our minds represent and optimize for. This is broadly analogous to how perceptual signals provide pre-reflective evidence about other properties. Additionally, I propose that evidentialism can be made more precise using reinforcement learning models in which the optimization target is determined by a latent parameter about which reward signals provide evidence.
+			        </div>
+			      </div>
+                            </td>
                           </tr>
                           <tr>
                             <td class="schedule-time">10:30–10:40</td>
@@ -174,7 +202,17 @@
                           </tr>
                           <tr>
                             <td class="schedule-time">10:40–11:10</td>
-                            <td><b>Talk:</b> <a href="https://people.cs.umass.edu/~pthomas/">Philip S. Thomas</a></td>
+                            <td><b>Talk:</b> <a href="https://people.cs.umass.edu/~pthomas/">Philip S. Thomas</a>
+			      <div class="talk-title">Qualia Optimization</div>
+			        <button class="btn btn-link abstract-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-phil" aria-expanded="false" aria-controls="abstract-phil">
+			          Abstract
+			        </button>
+			      <div class="collapse" id="abstract-phil">
+			        <div class="talk-abstract">
+			          This talk explores the speculative question: what if current or future AI systems have qualia, such as pain or pleasure? It does so by assuming that AI systems might someday possess qualia—and that the quality of these subjective experiences should be considered alongside performance metrics.
+			        </div>
+			      </div>
+			    </td>
                           </tr>
                           <tr>
                             <td class="schedule-time">11:10–11:20</td>
@@ -194,7 +232,9 @@
                           </tr>
                           <tr>
                             <td class="schedule-time">2:00–2:30</td>
-                            <td><b>Talk:</b> <a href="https://david-abel.github.io/">David Abel</a></td>
+                            <td><b>Talk:</b> <a href="https://david-abel.github.io/">David Abel</a>
+			      <div class="talk-title">The Foundations of Agency</div>
+			    </td>
                           </tr>
                           <tr>
                             <td class="schedule-time">2:30–2:40</td>
@@ -277,7 +317,17 @@
                           </tr>
                           <tr>
                             <td class="schedule-time">2:00–2:30</td>
-                            <td><b>Talk:</b> <a href="https://jdmartin86.github.io/">John D. Martin</a></td>
+                            <td><b>Talk:</b> <a href="https://jdmartin86.github.io/">John D. Martin</a>
+			      <div class="talk-title">Artifacts as Memory Beyond the Agent Boundary</div>
+			        <button class="btn btn-link abstract-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-john" aria-expanded="false" aria-controls="abstract-john">
+			          Abstract
+			        </button>
+			      <div class="collapse" id="abstract-john">
+			        <div class="talk-abstract">
+			          In reinforcement learning, an agent's computation is typically assumed to occur entirely within its own system boundary. Yet examples like marks on a calendar, a string tied around a finger, or footprints in the snow suggest that the environment itself can serve as a substrate for computation. In this talk, I will present a mathematical framework for how the environment can implicitly function as an agent's memory. I'll argue that certain observations, called artifacts, facilitate memory effects by reducing the information required to represent history. I relate this theory with experiments showing that when agents interact with spatial artifacts---such as footprints in the snow---the memory required to learn a performant policy is reduced. These results suggest, at least with respect to memory, that the boundary between agent and environment is more porous than typically assumed. 
+			        </div>
+			      </div>
+			    </td>
                           </tr>
                           <tr>
                             <td class="schedule-time">2:30–2:40</td>
